@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #006d77;
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.to-do {
+  border-radius: 25px;
+  background: #ced4da;
+  box-shadow: inset 5px 5px 6px #c0c5cb, inset -5px -5px 6px #dce3e9;
+  margin: 100px auto 20px auto;
+  padding: 40px 30px;
+  width: 540px;
+  height: 650px;
+  max-height: calc(100vh - 20px);
+  overflow-y: auto;
+}
+
+.to-do h2 {
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.searchBox {
+  display: flex;
+  max-width: 500px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #2f3640;
+  border-radius: 50px;
+  position: relative;
+  height: 50px;
+}
+
+.searchButton {
+  color: white;
+  position: absolute;
+  right: 0;
+  width: 90px;
+  height: 50px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  background: var(
+    --gradient-2,
+    linear-gradient(90deg, #2af598 0%, #009efd 100%)
+  );
+  border: 0;
+  display: inline-block;
+
+  cursor: pointer;
+  border: none !important;
+  outline: none;
+}
+
+/* Hover effect */
+button:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+  transform: translateY(-3px);
+}
+
+/* Button pressing effect */
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  padding: 24px 46px 24px 26px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 10px 40px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+ul li.done {
+  text-decoration: line-through;
+}
+.input-edit {
+  padding: 0 0.2rem;
+  border: 2px solid black;
+  background-color: transparent;
+  border-radius: 5rem;
+  font-size: 1rem;
+  outline: none;
+}
+.right-section {
+  margin-right: 0.5rem;
+}
+.message {
+  color: maroon;
+  font-weight: 700;
+  text-align: center;
+
+  margin-left: 40%;
+  font-size: 1rem;
+}
