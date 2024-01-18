@@ -25,5 +25,5 @@ The Todo List is a simple and intuitive task management application that allows 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/TheSuyog10todo-list.git
+   git clone https://github.com/TheSuyog10/todo-list.git
    ```
